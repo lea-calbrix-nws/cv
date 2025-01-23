@@ -1,6 +1,6 @@
 # CV Léa Calbrix
 
-ce projet contient le texte de mon curriculum vitae tel qu'il est écrit au 23 janvier 2025
+Ce projet contient le texte de mon curriculum vitae tel qu'il est écrit au 23 janvier 2025. 
 Ce projet contient une structure de base pour une page web simple, incluant des éléments HTML (basique), du CSS (basique), et un script JavaScript (basique).
 
 ## Structure du projet
