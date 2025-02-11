@@ -13,9 +13,99 @@ body {
   padding: 0;
   background-color: #f4f4f4;  
   color: black;
-  text-align: ;
+  text-align: justify;
 }
 
+#main_menu ul {
+  list-style: none; /* Supprime les puces des listes */
+  padding: 0;
+  display: flex; /* Affichage en ligne */
+  gap: 10px; /* Espacement entre les boutons */
+}
+
+#main_menu li {
+  display: inline-block;
+}
+
+#main_menu a {
+  display: inline-block;
+  padding: 10px 20px; /* Taille du bouton */
+  background-color: #8ECAE6; /* Couleur de fond */
+  color: white; /* Couleur du texte */
+  text-decoration: none; /* Supprime le soulignement */
+  border-radius: 5px; /* Coins arrondis */
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Animation fluide */
+}
+
+#main_menu a:hover {
+  background-color: #005DD0; /* Changement de couleur au survol */
+}
+
+#about {
+  display: flexbox;
+  align-items: center; /* Centre les éléments verticalement */
+  justify-content: center; /* Centre le contenu sur la page */
+  gap: 20px; /* Espacement entre l'image et le texte */
+  max-width: 900px; /* Largeur maximale pour éviter que ce soit trop large */
+  margin: 0 auto; /* Centre la section horizontalement */
+}
+
+#photo_profil {
+  flex-shrink: 0; /* Empêche l'image de se redimensionner */
+  width: 300px; /* Fixe la largeur de l'image */
+  height: auto; /* Garde les proportions */
+  border-radius: 10px; /* Arrondit légèrement les bords de l’image */
+}
+
+#about_title {
+  text-align: center;
+  width: 100%;
+}
+
+#about p,
+#about ul {
+  text-align: justify; /* Justifie le texte */
+}
+
+
+#about p {
+  margin-bottom: 10px; /* Ajoute un petit espace sous le paragraphe */
+}
+
+.text-content {
+  max-width: 500px; /* Limite la largeur du texte */
+}
+
+
+#social p {
+  text-align: center; /* Centre le texte et les éléments en ligne */
+  display: inline;
+  flex-direction: column;
+  align-items: center; /* Centre horizontalement */
+  gap: 10px; /* Espacement entre les éléments */
+}
+
+#social a {
+  display: inline; /* Assure que le lien reste sur la même ligne */
+  font-size: 18px;
+  color: #005DD0;
+  font-weight: bold;
+}
+
+#QR {
+  display: block; /* S'assure que l'image reste bien en place */
+  margin: 10px auto; /* Centre l'image */
+  background-color: none !important;
+}
+
+#social h1 {
+  text-align: center;
+  margin-bottom: 10px; /* Ajoute un petit espace sous le titre */
+}
+#social {
+  text-align: center;
+}
 
 header,
 footer {
