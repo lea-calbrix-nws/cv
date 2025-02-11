@@ -7,13 +7,13 @@
 
 
 body {
-    font-family: "Poiret One", serif;
+  font-family: "Poiret One", serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;  
+  background-color: #f4f4f4;
   color: black;
-  text-align: justify;
+  text-align: center; /* Centrer tout le texte sur la page */
 }
 
 #main_menu ul {
@@ -41,6 +41,74 @@ body {
 #main_menu a:hover {
   background-color: #005DD0; /* Changement de couleur au survol */
 }
+
+/* expérience & formation*/ 
+.container_exp_form {
+  display: flex;
+  justify-content: space-between; /* Répartit les sections côte à côte avec un espace entre elles */
+  gap: 20px; /* Ajoute un espace entre les deux sections */
+  justify-content: center;
+  align-content: center;
+}
+
+/* Chaque section */
+section {
+  width: 45%; /* Réduit la largeur des sections pour qu'elles tiennent côte à côte */
+  padding: 10px; /* Ajoute un peu de padding pour espacer le contenu des bords */
+}
+
+/* Centrer les titres */
+h1 {
+  text-align: center;
+  font-size: 24px; /* Ajuste la taille des titres selon ton style */
+}
+
+/* Justifier le texte des listes et des paragraphes */
+ul {
+  text-align: justify;
+  list-style-type: disc; /* Supprime les puces */
+  padding-left: 0; /* Évite les marges indésirables */
+}
+
+p {
+  text-align: justify; /* Justifie le texte des paragraphes */
+  line-height: 1.6; /* Améliore la lisibilité du texte */
+}
+
+/* Optionnel : Ajouter un peu de style aux éléments de liste */
+ul li {
+  margin-bottom: 8px; /* Un peu d'espace entre les éléments de la liste */
+}
+
+
+/* Compétences & Hobbies */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 00px; /* Ajoute un espace entre les sections */
+}
+
+/* Centrer les titres */
+h1 {
+  text-align: center;
+  font-size: 24px; /* Ajuste la taille du titre selon ton style */
+}
+
+/* Justifier le texte des listes */
+ul {
+  text-align: justify;
+  list-style-type: disc;
+  padding-left: 0; /* Évite les marges indésirables */
+}
+
+/* Optionnel : Ajouter un peu de style aux éléments de liste */
+ul li {
+  margin-bottom: 8px; /* Un peu d'espace entre les éléments */
+}
+
+
+
+/* À propos */
 #about { 
   display: flex; /* Utilise flex pour aligner le contenu */
   flex-direction: column; /* Empile les éléments verticalement */
@@ -64,9 +132,10 @@ body {
 
 #photo_profil {
   flex-shrink: 0; /* Empêche l'image de se redimensionner */
-  width: 300px; /* Fixe la largeur de l'image */
+  width: 280px; /* Fixe la largeur de l'image */
   height: auto; /* Garde les proportions */
   border-radius: 10px; /* Arrondit légèrement les bords de l’image */
+  margin-right: 50px;
 }
 
 #textContent {
@@ -84,7 +153,7 @@ body {
   margin-top: 10px; /* Ajoute un espace entre le texte et la liste */
 }
 
-
+/*Contact*/
 #social p {
   text-align: center; /* Centre le texte et les éléments en ligne */
   display: inline;
@@ -103,7 +172,13 @@ body {
 #QR {
   display: block; /* S'assure que l'image reste bien en place */
   margin: 10px auto; /* Centre l'image */
-  background-color: none !important;
+  background-color: transparent !important; /* Enlève le fond */
+  background: none !important;
+  background: transparent !important;
+}
+
+h1, #about_title, #social h1 {
+  text-align: center; /* Centrer les titres */
 }
 
 #social h1 {
@@ -142,10 +217,4 @@ footer {
 
 footer p {
   margin: 0;
-}
-
-#QR {
-  display: block; /* S'assure que l'image reste bien en place */
-  margin: 10px auto; /* Centre l'image */
-  background-color: none !important;
 }
