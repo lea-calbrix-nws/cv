@@ -41,14 +41,25 @@ body {
 #main_menu a:hover {
   background-color: #005DD0; /* Changement de couleur au survol */
 }
-
-#about {
-  display: flexbox;
-  align-items: center; /* Centre les éléments verticalement */
-  justify-content: center; /* Centre le contenu sur la page */
-  gap: 20px; /* Espacement entre l'image et le texte */
-  max-width: 900px; /* Largeur maximale pour éviter que ce soit trop large */
+#about { 
+  display: flex; /* Utilise flex pour aligner le contenu */
+  flex-direction: column; /* Empile les éléments verticalement */
+  align-items: center; /* Centre les éléments horizontalement */
+  gap: 20px; /* Espacement entre le titre, l'image, le texte et la liste */
+  max-width: 900px; /* Largeur maximale pour la section */
   margin: 0 auto; /* Centre la section horizontalement */
+}
+
+#about_title {
+  text-align: center; /* Centre le titre */
+  width: 100%;
+}
+
+#contentAbout {
+  display: flex; /* Aligne horizontalement l'image et le texte */
+  justify-content: center; /* Centre le contenu sur la page */
+  align-items: center; /* Centre verticalement */
+  gap: 20px; /* Espacement entre l'image et le texte */
 }
 
 #photo_profil {
@@ -58,23 +69,19 @@ body {
   border-radius: 10px; /* Arrondit légèrement les bords de l’image */
 }
 
-#about_title {
-  text-align: center;
-  width: 100%;
+#textContent {
+  max-width: 600px; /* Limite la largeur du texte */
 }
 
-#about p,
-#about ul {
+#textContent p {
   text-align: justify; /* Justifie le texte */
-}
-
-
-#about p {
   margin-bottom: 10px; /* Ajoute un petit espace sous le paragraphe */
 }
 
-.text-content {
-  max-width: 500px; /* Limite la largeur du texte */
+#textContent ul {
+  text-align: justify; /* Justifie la liste */
+  list-style-type: disc; /* Ajoute des puces à la liste */
+  margin-top: 10px; /* Ajoute un espace entre le texte et la liste */
 }
 
 
@@ -135,4 +142,10 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+#QR {
+  display: block; /* S'assure que l'image reste bien en place */
+  margin: 10px auto; /* Centre l'image */
+  background-color: none !important;
 }
