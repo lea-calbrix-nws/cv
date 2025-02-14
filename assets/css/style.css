@@ -1,3 +1,4 @@
+/** AJOUT TYPO GOOGLE FONT **/ 
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 .poiret-one-regular {
   font-family: "Poiret One", serif;
@@ -5,7 +6,7 @@
   font-style: normal;
 }
 
-
+/** PARAMÈTRES GÉNÉRAUX PAGE **/
 body {
   font-family: "Poiret One", serif;
   line-height: 1.6;
@@ -13,21 +14,59 @@ body {
   padding: 0;
   background-color: #f4f4f4;
   color: black;
-  text-align: center; /* Centrer tout le texte sur la page */
+  text-align: center; 
 }
 
-.main_menu ul {
-  list-style: none; /* Supprime les puces des listes */
-  padding: 0;
-  display: flex; /* Affichage en ligne */
-  gap: 10px; /* Espacement entre les boutons */
+/** LOGO **/
+
+#logoCharte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
 }
 
-.main_menu li {
+#logoCharte img {
+  margin-top: 100px !important;
+}
+
+#Bienvenue {
+  margin-top: 50px;
+  margin-bottom: 5px !important;
+}
+
+/** MENU FIXE AVEC BOUTONS **/ 
+
+#main_menu {
+  position: fixed;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  background-image: url(/assets/images/fondPapierGrain.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#main_menu ul {
+  margin: 80px 50px;
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+  list-style: none; 
+	display: flex;
+	justify-content: center; 
+	margin: 0; 
+	padding: 0; 
+}
+
+#main_menu li {
   display: inline-block;
 }
 
-.main_menu a {
+#main_menu a {
   display: inline-block;
   padding: 10px 20px; /* Taille du bouton */
   background-color: #8ECAE6; /* Couleur de fond */
@@ -38,48 +77,40 @@ body {
   transition: background-color 0.3s ease; /* Animation fluide */
 }
 
-.main_menu a:hover {
+#main_menu a:hover {
   background-color: #005DD0; /* Changement de couleur au survol */
 }
 
-/* expérience & formation*/ 
-.container_exp_form {
+/** EXPERIENCE **/
+#experience {
   display: flex;
-  justify-content: space-between; /* Répartit les sections côte à côte avec un espace entre elles */
-  gap: 50px; /* Ajoute un espace entre les deux sections */
-  justify-content: center;
-  align-content: center;
-}
-
-/* Chaque section */
-.container_exp_form section {
-  width: 30%; /* Réduit la largeur des sections pour qu'elles tiennent côte à côte */
-  padding: 100px; /* Ajoute un peu de padding pour espacer le contenu des bords */
-}
-
-/* Centrer les titres */
-.container_exp_form h1 {
+  width: 70%;
+  align-items: center;
   text-align: center;
-  font-size: 24px; /* Ajuste la taille des titres selon ton style */
 }
 
-/* Justifier le texte des listes et des paragraphes */
-.container_exp_form ul {
+#listeExperience {
+  display: flexbox;
+  align-items: center ;
+  text-align: left;
+  max-width: 60%;  
+}
+
+/* FORMATION */
+#formation {
+  display: flex;
+  width: 60%;
+  max-width: 1000px;
+  margin: top 100px bottom 100px;
   text-align: justify;
-  list-style-type: disc; /* Supprime les puces */
-  padding-left: 0; /* Évite les marges indésirables */
 }
 
-.container_exp_form p {
-  text-align: justify; /* Justifie le texte des paragraphes */
-  line-height: 1.6; /* Améliore la lisibilité du texte */
+#listeFormation {
+  display: flexbox;
+  align-items: center ;
+  text-align: left !important;
+  max-width: 60%;
 }
-
-/* Optionnel : Ajouter un peu de style aux éléments de liste */
-.container_exp_form ul li {
-  margin-bottom: 8px; /* Un peu d'espace entre les éléments de la liste */
-}
-
 
 /* Compétences & Hobbies */
 .container {
@@ -192,7 +223,7 @@ footer {
   color: black;
   padding: 1em 0;
   text-align: center;
-  background-image: url('/assets/images/Fichier_1.svg');
+  background-image: url('/assets/images/fondPapierGrain.svg');
   background-size: cover; /* Ajuste l'image à l'écran */
   background-position: center; /* Centre l'image */
 }

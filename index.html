@@ -10,9 +10,11 @@
 
 <body>
     <header>
-        <img src="assets/images/logo-charte-copie.svg" height="100" alt="logo" id="logo">
-        <br><h1>Bonjour ! Bienvenue sur mon cv en ligne !</h1>
-        <h2>N'hésitez pas à aller voir mon <a href="https://leacalbrixillustratrice.wordpress.com/" target="_blank">Portfolio</a></h2>
+        <div id="logoCharte">
+        <img src="assets/images/logoCharte.svg" height="100" alt="logo">
+        </div>
+        <br><h1 id="Bienvenue">Bonjour ! Bienvenue sur mon cv en ligne !</h1>
+        <br><h3> Dans le cadre de mes études à la NWS, je vous propose mes services en communication & en graphisme en alternance !</h3>
         <nav>
             <ul id="main_menu">
                 <li><a href="#experience">Mon expérience professionnelle</a></li>
@@ -21,65 +23,66 @@
                 <li><a href="#hobbies">Mes passions & activités</a></li>
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#social">Contact</a></li>
-                
-                <li><a href="#gift">Bonus</a></li>
             </ul>
         </nav>
     </header>
-    
-    <main>
-        <h3> Dans le cadre de mes études à la NWS, je vous propose mes services en communication & en graphisme en alternance !</h3>
 
-            <div class="container_exp_form">
-                <section>
-                    <h2 id="experience">Mon expérience professionnelle</h2>
-                    <p>2023-... ⎮ <strong>Illustratrice freelance</strong></p>
-                    <ul>
-                        <li>création d'illustration à la demande</li>
-                        <li>retravail de dessin/design pré-existant</li>
-                    </ul>
-                    <p>2020-21 ⎮ <strong>Conseillère clientèle</strong> ⎮ Ceacom ⎮ Le Havre</p>
-                    <ul>
-                        <li>présenter & valoriser un produit ou un service</li>
-                        <li>développer & fidéliser la relation client</li>
-                        <li>écoute active & restitution</li>
-                    </ul>
-                    <p>2017-18 ⎮ <strong>Ouvrière en maroquinerie</strong> ⎮ Maroquinerie du Puy ⎮ Chaspuzac</p>
-                    <p>2017 ⎮ <strong>Ambassadrice & Assistante spectateur</strong> ⎮ 500 ans du Havre ⎮ Ville du Havre </p>
-                    <p>2015 ⎮ <strong>Stagiaire en médiation culturelle</strong> ⎮ Le Portique ⎮ Le Havre</p>
-                </section>
-                
-                <section>
-                    <h2 id="formation">Mon parcours de formation</h2>
-                    <p>2025-... ⎮ <strong>Bachelor Chef de Projets Digitaux</strong> ⎮ Normandie Web School ⎮ Le Havre</p>
-                    <ul>
-                        <li>utilisation de la Creative Suite Adobe</li>
-                        <li>réalisation de contenus visuels</li>
-                        <li>élaboration de supports de communication</li>
-                        <li>création de charte graphique</li>
-                        <li>création de site web sur Wordpress</li>
-                    </ul>
-                    <p>2024-25 ⎮ <strong>Accompagnement professionnel</strong> ⎮ L'Institut des Vocations pour l'Emploi ⎮ Le Havre</p>
-                    <p>2011-15 ⎮ <strong>Cursus Art</strong> ⎮ EsadHaR ⎮ Le Havre</p>
-                    <ul>
-                        <li>CS5 Adobe</li>
-                        <li>montage vidéo sur Final Cut X</li>
-                        <li>montage son sur Reeper</li>
-                        <li>initiation au codage sur processing</li>
-                        <li>connaissances en Histoire de l'Art</li>
-                        <li>pratique artistique</li>
-                    </ul>
-                    <p>2011 ⎮ <strong>Baccalauréat Littéraire option Arts Plastiques</strong></p>
-                    <ul>
-                        <li>histoire de l'art</li>
-                        <li>pratique artistique</li>
-                    </ul>
-                </section>
+    <main>
+        
+
+        
+    <section id="experience">
+        <h2 id="titleExperience">Mon expérience professionnelle</h2>
+            <div id="listeExperience"><p>2023-... ⎮ <strong>Illustratrice freelance</strong></p>
+            <ul>
+                <li>création d'illustration à la demande</li>
+                <li>retravail de dessin/design pré-existant</li>
+            </ul>
+            <p>2020-21 ⎮ <strong>Conseillère clientèle</strong> ⎮ Ceacom ⎮ Le Havre</p>
+            <ul>
+                <li>présenter & valoriser un produit ou un service</li>
+                <li>développer & fidéliser la relation client</li>
+                <li>écoute active & restitution</li>
+            </ul>
+            <p>2017-18 ⎮ <strong>Ouvrière en maroquinerie</strong> ⎮ Maroquinerie du Puy ⎮ Chaspuzac</p>
+            <p>2017 ⎮ <strong>Ambassadrice & Assistante spectateur</strong> ⎮ 500 ans du Havre ⎮ Ville du Havre </p>
+            <p>2015 ⎮ <strong>Stagiaire en médiation culturelle</strong> ⎮ Le Portique ⎮ Le Havre</p>
             </div>
+    </section>
+                
+    <section class="formation">
+        <h2>Mon parcours de formation</h2>
+        <div id="listeFormation">
+            <p>2025-... ⎮ <strong>Bachelor Chef de Projets Digitaux</strong> ⎮ Normandie Web School ⎮ Le Havre</p>
+            <ul>
+                <li>utilisation de la Creative Suite Adobe</li>
+                <li>réalisation de contenus visuels</li>
+                <li>élaboration de supports de communication</li>
+                <li>création de charte graphique</li>
+                <li>création de site web sur Wordpress</li>
+            </ul>
+            <p>2024-25 ⎮ <strong>Accompagnement professionnel</strong> ⎮ L'Institut des Vocations pour l'Emploi ⎮ Le Havre</p>
+            <p>2011-15 ⎮ <strong>Cursus Art</strong> ⎮ EsadHaR ⎮ Le Havre</p>
+            <ul>
+                <li>CS5 Adobe</li>
+                <li>montage vidéo sur Final Cut X</li>
+                <li>montage son sur Reeper</li>
+                <li>initiation au codage sur processing</li>
+                <li>connaissances en Histoire de l'Art</li>
+                <li>pratique artistique</li>
+            </ul>
+            <p>2011 ⎮ <strong>Baccalauréat Littéraire option Arts Plastiques</strong></p>
+            <ul>
+                <li>histoire de l'art</li>
+                <li>pratique artistique</li>
+            </ul>
+        </div>
+        </section>
+        
 
      <div class="container">
             <section id="skills">
-              <h2 id="title_skills">Mes compétences</h2>
+              <h2>Mes compétences</h2>
               <ul>
                 <li>Adobe Creative Suite</li>
                 <li>Procreate</li>
@@ -90,7 +93,7 @@
             </section>
             
             <section id="hobbies">
-              <h2 id="title_hobbies">Mes passions & activités</h2>
+              <h2>Mes passions & activités</h2>
               <ul>
                 <li>le jeu de rôle (sur table ou grandeur nature)</li>
                 <li>la couture</li>
@@ -98,9 +101,9 @@
                 <li>les Arts & la Culture</li>
               </ul>
             </section>
-          </div>
+        </div>
         <section id="about">
-            <h2 id="about_title">À propos</h2>
+            <h2>À propos</h2>
                 <img src="assets/images/photo_profil.jpg" height="300" alt="photo de profil" id="photo_profil">
                 <div id="textContent">
                     <p>Créative & pleine d'énergie, j'ai hâte trouver l'entreprise qui me fera confiance !</p>
@@ -115,6 +118,7 @@
                         <li>motion design</li>
                         <li>stratégie de communication </li>
                     </ul>
+           <h2>N'hésitez pas à aller voir mon <a href="https://leacalbrixillustratrice.wordpress.com/" target="_blank">Portfolio</a></h2>
                 </div>
         </section>
         
@@ -122,11 +126,8 @@
         <section id="social">
             <h2>Contact</h2>
                 
-                <p>Retrouvez tout mes réseaux sur mon <a href="https://linktr.ee/lea.calbrix" target="_blank">Linktree</a>
-                </p>
-                <img src="assets/images/lea.calbrix.svg" height="200" width="200" alt="QR Code Linktree" id="QR">
-                <br> 
-                
+                <p>Retrouvez tout mes réseaux sur mon <a href="https://linktr.ee/lea.calbrix" target="_blank">Linktree</a></p>
+                <img src="assets/images/lea.calbrix.svg" height="200" width="200" alt="QR Code Linktree" id="QR">                
         </section>
     </main>
 </body>
@@ -134,8 +135,6 @@
 <footer>
         <img src="assets/images/Logo-NWS-rojo.svg" alt="logo rouge rojo Normandie Web School" height="350" width="350">
         <p>&copy; 2025 CV Léa Calbrix. Tous droits réservés.</p>
-        <br>
-        <img src="assets/images/izma.gif" alt="boite" height="300" width="300" id="gift">
         <script src="assets/js/script.js"></script>
 </footer>
 
