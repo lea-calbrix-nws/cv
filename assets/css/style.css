@@ -31,8 +31,14 @@ body {
 }
 
 #Bienvenue {
-  margin-top: 50px;
+  margin-top: -10px;
   margin-bottom: 5px !important;
+  padding: auto;
+}
+
+#cadre {
+  margin-top: -20px;
+  padding-bottom: 30px;
 }
 
 /** MENU FIXE AVEC BOUTONS **/ 
@@ -68,25 +74,31 @@ body {
 
 #main_menu a {
   display: inline-block;
-  padding: 10px 20px; /* Taille du bouton */
-  background-color: #8ECAE6; /* Couleur de fond */
-  color: white; /* Couleur du texte */
-  text-decoration: none; /* Supprime le soulignement */
-  border-radius: 5px; /* Coins arrondis */
+  padding: 10px 20px; 
+  background-color: #8ECAE6;
+  color: white; 
+  text-decoration: none; 
+  border-radius: 5px;
   font-weight: bold;
-  transition: background-color 0.3s ease; /* Animation fluide */
+  transition: background-color 0.3s ease;
 }
 
 #main_menu a:hover {
-  background-color: #005DD0; /* Changement de couleur au survol */
+  background-color: #005DD0;
 }
 
 /** EXPERIENCE **/
 #experience {
   display: flex;
+  flex-direction: column;
   width: 70%;
   align-items: center;
   text-align: center;
+  margin: 0 auto;
+  padding: 50px 50px;
+  background-color: #f9f9f9; /* Couleur de fond légère */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour plus de style */
 }
 
 #listeExperience {
@@ -94,127 +106,114 @@ body {
   align-items: center ;
   text-align: left;
   max-width: 60%;  
+  padding-left: 20px; /* Indentation des listes */
+  margin: 10px 0;
 }
 
 /* FORMATION */
 #formation {
   display: flex;
-  width: 60%;
-  max-width: 1000px;
-  margin: top 100px bottom 100px;
-  text-align: justify;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 50px;
+  background-color: #f9f9f9; /* Couleur de fond légère */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour plus de style */
 }
 
 #listeFormation {
   display: flexbox;
   align-items: center ;
-  text-align: left !important;
-  max-width: 60%;
+  text-align: left;
+  max-width: 60%;  
+  padding-left: 20px; /* Indentation des listes */
+  margin: 10px 0;
 }
 
-/* Compétences & Hobbies */
-.container {
+/* COMPÉTENCES */
+#skills {
   display: flex;
-  justify-content: center;
-  gap: 350px; /* Ajoute un espace entre les sections */
-}
-
-/* Centrer les titres */
-.container h1 {
-  text-align: center;
-  font-size: 24px; /* Ajuste la taille du titre selon ton style */
-}
-
-/* Justifier le texte des listes */
-.container ul {
-  text-align: justify;
-  list-style-type: disc;
-  padding-left: 0; /* Évite les marges indésirables */
-}
-
-/* Optionnel : Ajouter un peu de style aux éléments de liste */
-.container ul li {
-  margin-bottom: 8px; /* Un peu d'espace entre les éléments */
-}
-
-
-
-/* À propos */
-.about { 
-  display: flex; /* Utilise flex pour aligner le contenu */
-  flex-direction: column; /* Empile les éléments verticalement */
-  align-items: center; /* Centre les éléments horizontalement */
-  gap: 20px; /* Espacement entre le titre, l'image, le texte et la liste */
-  max-width: 60% !important; /* Largeur maximale pour la section */
-  margin: 0 auto; /* Centre la section horizontalement */
-}
-
-.about_title {
-  text-align: center; /* Centre le titre */
-  width: 100%;
-}
-
-.contentAbout {
-  display: flex; /* Aligne horizontalement l'image et le texte */
-  justify-content: center; /* Centre le contenu sur la page */
-  align-items: center; /* Centre verticalement */
-  gap: 50px; /* Espacement entre l'image et le texte */
-}
-
-.contentAbout .photo_profil {
-  flex-shrink: 0; /* Empêche l'image de se redimensionner */
-  width: 280px; /* Fixe la largeur de l'image */
-  height: auto; /* Garde les proportions */
-  border-radius: 10px; /* Arrondit légèrement les bords de l’image */
-}
-
-.contentAbout .textContent {
-  max-width: 40%; /* Limite la largeur du texte */
-}
-
-.contentAbout .textContent p {
-  text-align: justify; /* Justifie le texte */
-  margin-bottom: 10px; /* Ajoute un petit espace sous le paragraphe */
-}
-
-.contentAbout .textContent ul {
-  text-align: justify; /* Justifie la liste */
-  list-style-type: disc; /* Ajoute des puces à la liste */
-  margin-top: 10px; /* Ajoute un espace entre le texte et la liste */
-}
-
-
-/*Contact*/
-.social p {
-  text-align: center; /* Centre le texte et les éléments en ligne */
-  display: inline;
   flex-direction: column;
-  align-items: center; /* Centre horizontalement */
-  gap: 10px; /* Espacement entre les éléments */
-}
-
-.social a {
-  display: inline; /* Assure que le lien reste sur la même ligne */
-  font-size: 18px;
-  color: #005DD0;
-  font-weight: bold;
-}
-
-.social #QR {
-  display: block; /* S'assure que l'image reste bien en place */
-  margin: 10px auto; /* Centre l'image */
-  background-color: transparent !important; /* Enlève le fond */
-  background: none !important;
-  background: transparent !important;
-}
-
-.about_title h1, .social h1 {
-  text-align: center; /* Centrer les titres */
-  margin-bottom: 10px; /* Ajoute un petit espace sous le titre */
-}
-
-.social {
+  width: 70%;
+  align-items: center;
   text-align: center;
+  margin: 0 auto;
+  padding: 50px 50px;
+  background-color: #f9f9f9; /* Couleur de fond légère */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour plus de style */
+}
+
+#listeSkills {
+  display: flexbox;
+  align-items: center ;
+  text-align: left;
+  max-width: 60%;  
+  padding-left: 20px; /* Indentation des listes */
+  margin: 10px 0;
+}
+
+/* HOBBIES */
+#hobbies {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 50px;
+  background-color: #f9f9f9; /* Couleur de fond légère */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour plus de style */
+}
+
+#listeHobbies {
+  display: flexbox;
+  align-items: center ;
+  text-align: left;
+  max-width: 60%;  
+  padding-left: 20px; /* Indentation des listes */
+  margin: 10px 0;
+}
+
+/* À PROPOS */
+#about {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 50px;
+  background-color: #f9f9f9; /* Couleur de fond légère */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour plus de style */
+}
+
+#listeAbout {
+  display: flexbox;
+  align-items: center ;
+  text-align: left;
+  max-width: 60%;  
+  padding-left: 20px; /* Indentation des listes */
+  margin: 10px 0;
+}
+
+/* CONTACT */
+#social {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 50px;
+  background-color: #f9f9f9; /* Couleur de fond légère */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour plus de style */
 }
 
 header,
@@ -226,10 +225,6 @@ footer {
   background-image: url('/assets/images/fondPapierGrain.svg');
   background-size: cover; /* Ajuste l'image à l'écran */
   background-position: center; /* Centre l'image */
-}
-
-h1 {
-  color: #000;
 }
 
 header li {
