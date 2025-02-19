@@ -96,9 +96,9 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 50px 50px;
-  background-color: #f9f9f9; /* Couleur de fond légère */
-  border-radius: 10px; /* Coins arrondis */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour plus de style */
+  background-color: #f9f9f9;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 #listeExperience {
@@ -106,7 +106,7 @@ body {
   align-items: center ;
   text-align: left;
   max-width: 60%;  
-  padding-left: 20px; /* Indentation des listes */
+  padding-left: 20px; 
   margin: 10px 0;
 }
 
@@ -119,9 +119,9 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 50px 50px;
-  background-color: #f9f9f9; /* Couleur de fond légère */
-  border-radius: 10px; /* Coins arrondis */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour plus de style */
+  background-color: #f9f9f9;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 #listeFormation {
@@ -129,7 +129,7 @@ body {
   align-items: center ;
   text-align: left;
   max-width: 60%;  
-  padding-left: 20px; /* Indentation des listes */
+  padding-left: 20px; 
   margin: 10px 0;
 }
 
@@ -142,9 +142,9 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 50px 50px;
-  background-color: #f9f9f9; /* Couleur de fond légère */
-  border-radius: 10px; /* Coins arrondis */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour plus de style */
+  background-color: #f9f9f9; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 #listeSkills {
@@ -152,7 +152,7 @@ body {
   align-items: center ;
   text-align: left;
   max-width: 60%;  
-  padding-left: 20px; /* Indentation des listes */
+  padding-left: 20px; 
   margin: 10px 0;
 }
 
@@ -165,9 +165,9 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 50px 50px;
-  background-color: #f9f9f9; /* Couleur de fond légère */
-  border-radius: 10px; /* Coins arrondis */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour plus de style */
+  background-color: #f9f9f9; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 #listeHobbies {
@@ -175,7 +175,7 @@ body {
   align-items: center ;
   text-align: left;
   max-width: 60%;  
-  padding-left: 20px; /* Indentation des listes */
+  padding-left: 20px; 
   margin: 10px 0;
 }
 
@@ -188,15 +188,18 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 50px 50px;
-  background-color: #f9f9f9; /* Couleur de fond légère */
-  border-radius: 10px; /* Coins arrondis */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour plus de style */
+  background-color: #f9f9f9;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #photoProfil {
-  margin: auto;
+  align-items: center;
   border-radius: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-items: center;
+  margin-top: 30px;
+  margin-left: 20px;
 }
 
 #texteAbout {
@@ -205,14 +208,20 @@ body {
   text-align: justify;
   justify-content: center;
   max-width: 60%;  
-  padding-left: 20px; /* Indentation des listes */
-  margin: 10px 0;
+  margin-left: 10%;
 }
 
 #Portfolio {
   margin-top: auto;
 }
 
+#photoTexte {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  max-width: fit-content;
+  align-items: center;
+}
 
 /* CONTACT */
 #social {
@@ -223,9 +232,9 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 50px 50px;
-  background-color: #f9f9f9; /* Couleur de fond légère */
-  border-radius: 10px; /* Coins arrondis */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour plus de style */
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   background-image: none !important;
 }
 
@@ -236,8 +245,8 @@ footer {
   padding: 1em 0;
   text-align: center;
   background-image: url('/assets/images/fondPapierGrain.svg');
-  background-size: cover; /* Ajuste l'image à l'écran */
-  background-position: center; /* Centre l'image */
+  background-size: cover; 
+  background-position: center; 
 }
 
 header li {
@@ -255,9 +264,9 @@ footer p {
   margin: 0;
 }
 
-/* ESPACE ENTRE LES DIFFÉRENTSBLOCS*/
+/* ESPACE ENTRE LES DIFFÉRENTS BLOCS*/
 section {
-  margin-bottom: 50px; /* Espace entre les sections */
+  margin-bottom: 50px;
 }
 
 #experience,
@@ -279,8 +288,9 @@ section {
 [id]::before {
   content: "";
   display: block;
-  height: 120px; /* Ajuste cette valeur à la hauteur de ton menu */
-  margin-top: -80px; /* Correspond à la hauteur du menu */
+  height: 120px; 
+  margin-top: -80px; 
   visibility: hidden;
 }
 
+/* BOUTON DE RETOUR EN HAUT DE PAGE */
