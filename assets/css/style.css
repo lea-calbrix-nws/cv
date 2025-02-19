@@ -201,6 +201,7 @@ body {
 
 #texteAbout {
   display: flex;
+  flex-direction: column;
   text-align: justify;
   justify-content: center;
   max-width: 60%;  
@@ -212,11 +213,6 @@ body {
   margin-top: auto;
 }
 
-#textePhoto {
-  display: flex;
-  flex-direction: row !important;
-  justify-content: center;
-}
 
 /* CONTACT */
 #social {
