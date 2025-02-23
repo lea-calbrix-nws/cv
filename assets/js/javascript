@@ -1,0 +1,19 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const backToTopButton = document.getElementById("backToTop");
+  
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 200) { // Affiche le bouton après 200px de scroll
+        backToTopButton.classList.add("show");
+      } else {
+        backToTopButton.classList.remove("show");
+      }
+    });
+  
+    backToTopButton.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Défilement fluide vers le haut
+      });
+    });
+  });
+  
