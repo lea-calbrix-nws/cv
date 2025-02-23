@@ -59,7 +59,7 @@ body {
   left: 0;
   width: 100%;
   padding: 20px;
-  background-image: url("/assets/images/fondPapierGrain.gif");
+  background: url("https://github.com/lea-calbrix-nws/cv/raw/main/assets/images/fondPapierGrain.svg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -254,7 +254,7 @@ footer {
   color: black;
   padding: 1em 0;
   text-align: center;
-  background-image: url("/assets/images/fondPapierGrain.gif");
+  background: url("https://github.com/lea-calbrix-nws/cv/raw/main/assets/images/fondPapierGrain.svg");
   background-size: cover; 
   background-position: center; 
 }
