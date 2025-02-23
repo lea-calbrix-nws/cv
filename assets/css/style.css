@@ -21,7 +21,13 @@ body {
   text-align: center; 
 }
 
+#header,
+#footer {
+  background-color: #F4F4E4;
+}
+
 /** LOGO **/
+
 
 #logoCharte {
   display: flex;
@@ -53,7 +59,7 @@ body {
   left: 0;
   width: 100%;
   padding: 20px;
-  background-image: url("/assets/images/fondPapierGraine.gif");
+  background-image: url("/assets/images/fondPapierGrain.gif");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
