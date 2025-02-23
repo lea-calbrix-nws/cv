@@ -6,6 +6,10 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /** PARAMÈTRES GÉNÉRAUX PAGE **/
 body {
   font-family: "Poiret One", serif;
@@ -295,29 +299,30 @@ section {
 
 /* BOUTON DE RETOUR EN HAUT DE PAGE */
 /* Style du bouton de retour en haut */
-#backToTop {
-  position: fixed; /* Fixe le bouton à l'écran */
-  bottom: 20px; /* Distance du bas */
-  right: 20px; /* Distance de la droite */
+#scrollToTopButton {
+  display: block;
+  z-index: 99;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  margin-block: 90px;
+  margin-right: 30px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
   width: 50px;
   height: 50px;
-  background-color: #005DD0;
-  color: white;
-  border: none;
-  border-radius: 50%; /* Bouton rond */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: none; /* Caché par défaut */
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  cursor: pointer;
-  z-index: 1000; /* Toujours visible */
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  padding: 8px;
+  background-color: #8ECAE6;
+  background: url("assets/images/iconeRetour.svg");
+  iamge
 }
 
-/* Affiche le bouton lorsque l'on dépasse 200px de scroll */
-#backToTop.show {
-  display: flex;
-  opacity: 1;
+#scrollToTopButton:hover,
+#scrollToTopButton:focus,
+#scrollToTopButton:focus-within {
+  cursor: pointer;
 }
